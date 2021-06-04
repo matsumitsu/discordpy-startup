@@ -21,7 +21,7 @@ async def on_message(message):
         return
     if message.content == "love":
         a = await message.channel.send("love")
-        a.add_reaction(wolf)
+        await a.add_reaction(wolf)
     
 
 @bot.command()
