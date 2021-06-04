@@ -5,6 +5,11 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
+wolf = "🐺"
+
+class game:
+    
+
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -18,7 +23,7 @@ async def on_message(message):
         return
     if message.content == "love":
         a = await message.channel.send("love")
-        print(a)
+        a.add_reaction(wolf)
     
 
 @bot.command()
