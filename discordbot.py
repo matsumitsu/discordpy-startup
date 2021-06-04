@@ -22,7 +22,7 @@ async def on_message(message):
     if message.content == "love":
         a = await message.channel.send("love")
         await a.add_reaction(wolf)
-        await bot.wait_for_reaction(emoji=wolf, message=a)
+        await bot.wait_for('reaction_add', check=lambda r, u: r==wolf, timeout=60)
         await message.channel.send("ffck")
         
     
