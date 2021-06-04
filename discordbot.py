@@ -16,7 +16,7 @@ async def on_command_error(ctx, error):
 async def on_message(message):
     if message.author.bot:
         return
-    if message.content == "/fuck":
+    if message.content == "fuck":
         await message.channel.send("fuck")
     
 
