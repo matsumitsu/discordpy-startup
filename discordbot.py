@@ -7,7 +7,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 wolf = "🐺"
     
-
+print(wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf+wolf)
 
 @bot.event
 async def on_command_error(ctx, error):
