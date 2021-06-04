@@ -23,7 +23,7 @@ async def on_message(message):
         a = await message.channel.send("love")
         await a.add_reaction(wolf)
         print("a")
-        check = lambda r, u: true 
+        check = lambda r, u: True 
         await bot.wait_for('reaction_add', check=check, timeout=60)
         print("a")
         await message.channel.send("ffck")
