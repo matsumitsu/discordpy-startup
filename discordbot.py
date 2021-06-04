@@ -17,7 +17,8 @@ async def on_message(message):
     if message.author.bot:
         return
     if message.content == "love":
-        await message.channel.send("love")
+        a = await message.channel.send("love")
+        print(a)
     
 
 @bot.command()
